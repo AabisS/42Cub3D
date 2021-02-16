@@ -6,7 +6,7 @@
 /*   By: fmarckma <fmarckma@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/09 14:14:44 by fmarckma          #+#    #+#             */
-/*   Updated: 2021/02/16 18:08:25 by fmarckma         ###   ########.fr       */
+/*   Updated: 2021/02/16 18:46:55 by fmarckma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -73,7 +73,8 @@ void	raycaster(t_storage *storage, t_raycasting *ray)
 	int		x;
 
 	x = 0;
-	storage->zbuffer = malloc(sizeof(double) * storage->info->width);
+	if (!(storage->zbuffer = malloc(sizeof(double) * storage->info->width)))
+		return ;
 	while (x < storage->info->width)
 	{
 		ray->cam_x = 2 * x / (double)storage->info->width - 1;
