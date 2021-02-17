@@ -6,7 +6,7 @@
 /*   By: fmarckma <fmarckma@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/25 09:46:40 by fmarckma          #+#    #+#             */
-/*   Updated: 2021/02/10 15:17:39 by fmarckma         ###   ########.fr       */
+/*   Updated: 2021/02/17 14:36:04 by fmarckma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,6 +39,8 @@ int	verif_info(t_parse *info)
 		return (error_manage3(15));
 	else if (!info->err)
 		return (error_manage3(14));
+	else if (info->sprite_nbr > 30)
+		return (error_manage3(17));
 	else
 		return (0);
 }

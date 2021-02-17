@@ -6,7 +6,7 @@
 /*   By: fmarckma <fmarckma@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/09 14:17:04 by fmarckma          #+#    #+#             */
-/*   Updated: 2021/02/10 15:25:56 by fmarckma         ###   ########.fr       */
+/*   Updated: 2021/02/17 14:35:36 by fmarckma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -83,6 +83,12 @@ int	error_manage3(int i)
 	else if (i == 16)
 	{
 		ft_putstr_fd("Premiere ou derniere ligne invalide\n", 1);
+		return (1);
+	}
+	else if (i == 17)
+	{
+		ft_putstr_fd("Trop de sprite pour le bon fonctionnement du programme",
+		1);
 		return (1);
 	}
 	return (0);

@@ -6,7 +6,7 @@
 /*   By: fmarckma <fmarckma@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/09 14:15:09 by fmarckma          #+#    #+#             */
-/*   Updated: 2021/02/16 18:08:25 by fmarckma         ###   ########.fr       */
+/*   Updated: 2021/02/17 14:22:27 by fmarckma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -85,8 +85,4 @@ void	player_pos_cam(t_storage *s, t_player *p)
 	}
 	player_pos_x(s, p);
 	player_pos_dir(s, p);
-	if (s->move->sprint == 1)
-		p->ms = 0.12;
-	if (s->move->sprint == 0)
-		p->ms = 0.07;
 }

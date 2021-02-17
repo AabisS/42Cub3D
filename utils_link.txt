@@ -1,0 +1,4 @@
+https://github.com/keuhdall/images_example
+ https://stackoverflow.com/questions/2654480/writing-bmp-image-in-pure-c-c-without-other-libraries
+https://github.com/qst0/ft_libgfx
+https://lodev.org/cgtutor/raycasting.html
